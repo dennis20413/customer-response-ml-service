@@ -1,0 +1,15 @@
+{
+  "rows": 8238,
+  "diagnostic": "PSI against training-only quantile-midpoint bins with separate out-of-support bins",
+  "interpretation": "Descriptive shift indicator; labels are required to measure model degradation",
+  "numeric_psi": {
+    "age": 1.1942033782889767,
+    "pdays": 1.9823328790026873,
+    "previous": 5.464453707719945,
+    "emp_var_rate": 26.96836276322434,
+    "cons_price_idx": 15.423653265083678,
+    "cons_conf_idx": 15.381226558697634,
+    "euribor3m": 25.564899244699653,
+    "nr_employed": 26.96836276322434
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "customers": [
+    {
+      "age": 35,
+      "pdays": 999,
+      "previous": 0,
+      "emp_var_rate": -1.8,
+      "cons_price_idx": 93.075,
+      "cons_conf_idx": -47.1,
+      "euribor3m": 1.405,
+      "nr_employed": 5099.1,
+      "job": "technician",
+      "marital": "single",
+      "education": "university.degree",
+      "default": "no",
+      "housing": "yes",
+      "loan": "no",
+      "poutcome": "nonexistent"
+    }
+  ]
+}

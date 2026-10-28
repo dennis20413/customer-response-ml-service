@@ -1,0 +1,3 @@
+`bank_sample.csv` contains every 100th row (zero-based positions 0, 100, ..., 41100) of UCI `bank-additional-full.csv`: 412 real rows in original order. It is a small, nonrepresentative fixture for offline integration tests, not the data used for reported performance. All original columns remain so tests can catch leakage exclusions.
+
+Attribution: Moro, S., Rita, P., & Cortez, P. (2014). Bank Marketing [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5K306 . CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Source CSV SHA-256: `74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8`.

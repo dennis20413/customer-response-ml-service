@@ -1,0 +1,218 @@
+{
+  "dataset": "UCI Bank Marketing bank-additional-full.csv",
+  "model_version": "fdeb6c03d678f7aa",
+  "protocol": "Preserved row order; train 50%, calibration 15%, threshold validation 15%, test 20%",
+  "training": {
+    "source_sha256": "74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8",
+    "rows": 41188,
+    "split": {
+      "train": [
+        0,
+        20594
+      ],
+      "calibration": [
+        20594,
+        26772
+      ],
+      "validation": [
+        26772,
+        32950
+      ],
+      "test": [
+        32950,
+        41188
+      ]
+    },
+    "python": "3.11.6",
+    "sklearn": "1.9.0",
+    "seed": 42,
+    "excluded": [
+      "duration",
+      "campaign",
+      "contact",
+      "month",
+      "day_of_week"
+    ]
+  },
+  "threshold": 0.10343203030064047,
+  "partition_positive_rates": {
+    "train": 0.046761192580363216,
+    "calibration": 0.05292975072839107,
+    "validation": 0.13111039171252833,
+    "test": 0.3083272638990046
+  },
+  "validation_f1": 0.26669324297388874,
+  "score_remapping": {
+    "slope": -0.6757415467788344,
+    "intercept": -5.015213015811078,
+    "reverses_ranking": true,
+    "interpretation": "Logistic score remapping fitted only on calibration rows; a negative slope reverses ordering and is not monotonic probability calibration"
+  },
+  "test": {
+    "train_prior_baseline": {
+      "rows": 8238,
+      "positive_rate": 0.3083272638990046,
+      "log_loss": 0.9774385003943834,
+      "brier": 0.2816783719006268,
+      "average_precision": 0.3083272638990046,
+      "roc_auc": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "calibration_period_prior_baseline": {
+      "rows": 8238,
+      "positive_rate": 0.3083272638990046,
+      "log_loss": 0.9437235402252625,
+      "brier": 0.2784894519692919,
+      "average_precision": 0.3083272638990046,
+      "roc_auc": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "raw_logistic_regression": {
+      "rows": 8238,
+      "positive_rate": 0.3083272638990046,
+      "log_loss": 1.7725237403374194,
+      "brier": 0.3057864146250897,
+      "average_precision": 0.2270875005123837,
+      "roc_auc": 0.3411429759854957,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "score_remapped_logistic_regression": {
+      "rows": 8238,
+      "positive_rate": 0.3083272638990046,
+      "log_loss": 0.6110524093713667,
+      "brier": 0.21109782286711914,
+      "average_precision": 0.39542599341639595,
+      "roc_auc": 0.6588570240145043,
+      "precision": 0.33492953892461347,
+      "recall": 0.9637795275590552,
+      "f1": 0.4971063052086506
+    }
+  },
+  "calibration_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "rows": 857,
+      "mean_probability": 0.08957349588144307,
+      "observed_response": 0.10151691948658109
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "rows": 3333,
+      "mean_probability": 0.1562639292857279,
+      "observed_response": 0.21632163216321632
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "rows": 2145,
+      "mean_probability": 0.2491643057777673,
+      "observed_response": 0.45314685314685316
+    },
+    {
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "rows": 1374,
+      "mean_probability": 0.3338447706195795,
+      "observed_response": 0.4243085880640466
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "rows": 503,
+      "mean_probability": 0.4314991283762854,
+      "observed_response": 0.33399602385685884
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "rows": 25,
+      "mean_probability": 0.5404736301200745,
+      "observed_response": 0.32
+    },
+    {
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "rows": 1,
+      "mean_probability": 0.6550703074166903,
+      "observed_response": 1.0
+    }
+  ],
+  "descriptive_slices": {
+    "contact": {
+      "cellular": {
+        "rows": 7245,
+        "positive_rate": 0.32187715665976535,
+        "log_loss": 0.6254027355369417,
+        "brier": 0.2173331736256119,
+        "average_precision": 0.42292587865475956,
+        "roc_auc": 0.6730696014599137,
+        "precision": 0.35070422535211265,
+        "recall": 0.9609777015437393,
+        "f1": 0.5138729649163036
+      },
+      "telephone": {
+        "rows": 993,
+        "positive_rate": 0.2094662638469285,
+        "log_loss": 0.5063513891602984,
+        "brier": 0.16560425162313122,
+        "average_precision": 0.2616279868802119,
+        "roc_auc": 0.6015004899559039,
+        "precision": 0.2252448313384113,
+        "recall": 0.9951923076923077,
+        "f1": 0.3673469387755102
+      }
+    },
+    "housing": {
+      "no": {
+        "rows": 3431,
+        "positive_rate": 0.3197318566015739,
+        "log_loss": 0.6283705354841584,
+        "brier": 0.21819085716896594,
+        "average_precision": 0.40806420009501454,
+        "roc_auc": 0.6601438526354106,
+        "precision": 0.34892205638474294,
+        "recall": 0.95897903372835,
+        "f1": 0.5116731517509727
+      },
+      "unknown": {
+        "rows": 209,
+        "positive_rate": 0.3157894736842105,
+        "log_loss": 0.6054675965376767,
+        "brier": 0.20868243802618944,
+        "average_precision": 0.42791742124205706,
+        "roc_auc": 0.6213180758635304,
+        "precision": 0.3157894736842105,
+        "recall": 1.0,
+        "f1": 0.48
+      },
+      "yes": {
+        "rows": 4598,
+        "positive_rate": 0.2994780339277947,
+        "log_loss": 0.5983835827487596,
+        "brier": 0.20591483346784079,
+        "average_precision": 0.3874365343827223,
+        "roc_auc": 0.6636526769112557,
+        "precision": 0.32558139534883723,
+        "recall": 0.9658678286129266,
+        "f1": 0.4870010984987184
+      }
+    }
+  },
+  "serving_max_abs_error": 1.1102230246251565e-16,
+  "limitations": [
+    "Old Portuguese campaign data; not evidence of Taiwan generalization",
+    "No customer IDs: recurring customers may cross time partitions",
+    "Row order is chronology proxy; exact timestamps unavailable",
+    "F1 threshold is a demonstration, not a verified business policy",
+    "Calibration can worsen under temporal distribution shift",
+    "Negative remapping slope reverses raw ranking: this is an observed shift failure, not proof of ordinary monotonic calibration"
+  ]
+}
